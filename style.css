@@ -29,6 +29,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
+    transition: 1s linear;
 }
 
 
@@ -329,6 +330,34 @@ header section .social .icons a:hover{
 
 }
 
-@media screen {
-    
+@media screen and (max-width: 1260px) {
+    header{
+        width: 83%;
+
+    }
 }
+
+@media screen and (max-width: 885px) {
+    header{
+        width: 95%;
+
+    }
+}
+
+@media screen and (max-width: 775px) {
+    header section .content{
+        left: 320px;
+        left: 13%;
+    }
+    header section .content{
+        left: 340px;
+    }
+    header section{
+        width: 92%;
+    }
+
+    
+
+}
+
+/*! 1:15:22 --> MediaQueries 2*/
