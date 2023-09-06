@@ -345,8 +345,7 @@ header section .social .icons a:hover{
 }
 
 @media screen and (max-width: 775px) {
-    header section .content{
-        left: 320px;
+    header .logo{
         left: 13%;
     }
     header section .content{
@@ -355,9 +354,46 @@ header section .social .icons a:hover{
     header section{
         width: 92%;
     }
-
-    
+}
+@media screen and (max-width: 730px) {
+    header {
+        width: 100%;
+        height: 100%;
+    }
+    header nav .right_menu ul li {
+        padding: 3px 6px;
+    }
 
 }
+@media screen and (max-width: 685px) {
+    header nav .right_menu ul {
+        position: absolute;
+        top: 20%;
+        flex-direction: column;
+        width: 15px;
+        right: 17px;
+    }
+    header nav .right_menu ul li {
+        padding: 30px 10px;
+        transform: rotate(90deg);
+    }
+    header section .content{
+        left: 24%;
+        top: 38%;
+    }
+    header .logo {
+        left: 30%;
+    }
+    header section .cards {
+        top: 43%;
+    }
+    header section .social {
+        top: 45%;
+    }
+}
+/*! 1:20:24 MediaQueries3 */
 
-/*! 1:15:22 --> MediaQueries 2*/
+
+
+
+

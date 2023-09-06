@@ -23,4 +23,3 @@ Array.from(document.getElementsByClassName("card")).forEach((ele, i)=> {
     })
 })
 
-//! 1:10:20 --> MediaQueries
