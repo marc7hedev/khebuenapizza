@@ -391,8 +391,37 @@ header section .social .icons a:hover{
         top: 45%;
     }
 }
-/*! 1:20:24 MediaQueries3 */
 
+@media screen and (max-width: 500px) {
+    header .logo {
+        left: 20%;
+    }
+    header section .content {
+        left: 11%;
+        top: 38%;
+    }
+}
+
+@media screen and (max-width: 418px) {
+    header section .content h1 {
+        font-size: 32px;
+    }
+    header section .content p {
+        font-size: 9px;
+        width: 220px;
+    }
+    header .logo { 
+        width: 200px;
+    }
+    header .logo img { 
+        width: 245px;
+        margin: 75px 0px 0px -30px;
+    }
+}
+
+
+
+/*! 1:22:59*/
 
 
 
