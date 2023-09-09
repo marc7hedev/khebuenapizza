@@ -1,3 +1,6 @@
+
+let carrito = [];
+
 let left = document.getElementsByClassName("bi bi-caret-left-fill")[0];
 let right = document.getElementsByClassName("bi bi-caret-right-fill")[0];
 let cards = document.getElementsByClassName("cards")[0];
@@ -23,3 +26,22 @@ Array.from(document.getElementsByClassName("card")).forEach((ele, i)=> {
     })
 })
 
+function agregarAlCarrito(producto) {
+    carrito.push(producto);
+    actualizarCarrito();
+}
+
+
+function actualizarCarrito() {
+    let cartContainer = document.getElementById("cart-container");
+    // Limpia el contenido actual del carrito
+    cartContainer.innerHTML = "";
+    
+    // Itera sobre los productos en el carrito y crea elementos para mostrarlos
+    carrito.forEach((producto, i)=> {
+        let item = document.createElement("div");
+        item.innerHTML = `${producto.title} - ${producto.price}`;
+        cartContainer.appendChild(item);
+    });
+}
+    
